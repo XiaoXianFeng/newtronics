@@ -67,7 +67,7 @@
 <table class="oms_table" border="1" style="margin-left: auto;margin-right: auto; width:80%">
     <tbody>
 		<tr>
-			<td style="width:140px; word-break:break-all;" rowspan = "12">生<br/>产<br/>资<br/>料</td>
+			<td style="width:140px; word-break:break-all;" rowspan = "12" Align = left>生产资料</td>
 			<td>产品名称</td>
 			<td>产品型号</td>
 			<td>产品描述</td>

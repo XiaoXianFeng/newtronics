@@ -28,8 +28,11 @@
         <script src="${rc.getContextPath()}/resources/x-editable/inputs-ext/wysihtml5/wysihtml5-0.0.3.js"></script>
 
 		<style>
+			label{
+				font-size:1px;
+				font-weight:normal}
 			table{
-				font-size:1px;}
+				font-size:5px;}
 			.oms_table {
 				table-layout: fixed;				
 			}

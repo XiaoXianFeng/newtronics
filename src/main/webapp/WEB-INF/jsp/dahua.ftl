@@ -65,7 +65,7 @@
 			<#assign canWrite = "true">
 		</#if>
 		
-		<#include "haixinDetail.ftl">
+		<#include "dahuaDetail.ftl">
 		<#include "buttons.ftl">
 		
      	<#include "ajax.ftl">

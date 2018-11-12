@@ -33,11 +33,13 @@
 			label{
 				font-weight:normal;}
 			table{
-				font-size:5px;}
+				font-size:10px;}
 			.oms_table {
 				table-layout: fixed;				
 			}
 			.oms_table td {
+				word-wrap: break-word;
+				word-break: break-all;
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;

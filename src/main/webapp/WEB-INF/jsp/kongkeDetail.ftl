@@ -50,7 +50,7 @@
 			</td>
 		</tr>
 </table>
-
+<br>
 <table class="oms_table" border="1" style="margin-left: auto;margin-right: auto; width:80%">
     <tbody>
 		<tr>
@@ -58,7 +58,7 @@
 			<td width=15%px>产品名称 </td>
 			<td width=25%px>产品型号 </td>
 			<td width=25%px>PCB 版本号 </td>
-			<td width=25%px>产品P/N </td>
+			<td width=25%px>物料编码</td>
 		</tr>
 		<tr>
 			<td style="width:100px; word-break:break-all;">
@@ -71,7 +71,7 @@
 				<a href="#" class="editable" id="pcbVer" data-type="textarea" data-pk="pcbVer" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入PCB版本号 ">${(plan.planItems['pcbVer'].itemValue)!}</a>
 			</td>
 			<td style="width:60px; word-break:break-all;">
-				<a href="#" class="editable" id="productPN" data-type="textarea" data-pk="productPN" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入产品P/N ">${(plan.planItems['productPN'].itemValue)!}</a>
+				<a href="#" class="editable" id="wuliao_code" data-type="textarea" data-pk="wuliao_code" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入物料编码 ">${(plan.planItems['wuliao_code'].itemValue)!}</a>
 			</td>
 		</tr>
 		<tr>
@@ -79,7 +79,7 @@
 			<td colspan="3">
 				<label><input ${canWrite!'disabled'} id="cat-smt" class="ajaxCheckbox-cat" type="checkbox" name="cat-smt" ${(plan.planItems['cat-smt'].itemValue)!}><span> SMT</span></label>
 				<label><input ${canWrite!'disabled'} id="cat-chajian" class="ajaxCheckbox-cat" type="checkbox" name="cat-chajian" ${(plan.planItems['cat-chajian'].itemValue)!}><span> 插件</span></label>
-				<label><input ${canWrite!'disabled'} id="cat-zuzhuang" class="ajaxCheckbox-cat" type="checkbox" name="cat-zuzhuang" ${(plan.planItems['cat-zuzhuang'].itemValue)!}><span> 组装</span></label>
+				<label><input ${canWrite!'disabled'} id="cat-test" class="ajaxCheckbox-cat" type="checkbox" name="cat-test" ${(plan.planItems['cat-test'].itemValue)!}><span> 测试</span></label>
 				<label><input ${canWrite!'disabled'} id="cat-other" class="ajaxCheckbox-cat" type="checkbox" name="cat-other" ${(plan.planItems['cat-other'].itemValue)!}><span> 其他</span></label>
 				<#if canWrite??>
 				<script>

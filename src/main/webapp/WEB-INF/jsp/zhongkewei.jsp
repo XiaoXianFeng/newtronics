@@ -61,7 +61,7 @@
 		</c:if>
 		</div>
 		<c:if test="${plan != null}">
-			<jsp:include page="./shengbenDetail.jsp">
+			<jsp:include page="./zhongkeweiDetail.jsp">
 				<jsp:param value="" name="view"/>
 			</jsp:include>
 				<center>

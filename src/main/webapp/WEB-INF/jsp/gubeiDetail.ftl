@@ -10,7 +10,8 @@
 			<#if canWrite??>
 				<script>
 				$('#customer').editable({
-					placement: 'bottom'
+					placement: 'bottom',
+					rows: 2
 				});
 				</script>
 			</#if>
@@ -40,17 +41,17 @@
 	<tr>
 		<td>订单编号:</td>
 		<td>
-			<a href="#" class="editable" id="orderNo" data-type="textarea" data-pk="orderNo" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入订单编号">${(plan.planItems['orderNo'].itemValue)!}</a>
+			<a href="#" class="editable" id="orderNo" data-type="textarea" data-placement="bottom" data-pk="orderNo" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入订单编号">${(plan.planItems['orderNo'].itemValue)!}</a>
 		</td>
 		<td>工    厂：</td>
 		<td>
-			<a href="#" class="editable" id="factory" data-type="textarea" data-pk="factory" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入工厂">${(plan.planItems['factory'].itemValue)!}</a>
+			<a href="#" class="editable" id="factory" data-type="textarea" data-placement="bottom" data-pk="factory" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入工厂">${(plan.planItems['factory'].itemValue)!}</a>
 		</td>
 	</tr>
 	<tr>
 		<td>工单编号:</td>
 		<td>
-			<a href="#" class="editable" id="gongdanNo" data-type="textarea" data-pk="gongdanNo" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入工单编号">${(plan.planItems['gongdanNo'].itemValue)!}</a>
+			<a href="#" class="editable" id="gongdanNo" data-type="textarea" data-placement="bottom" data-pk="gongdanNo" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入工单编号">${(plan.planItems['gongdanNo'].itemValue)!}</a>
 		</td>
 		<td>日    期：</td>
 		<td>
@@ -59,7 +60,7 @@
 		</td>
 	</tr>
 </table>
-
+<br>
 <table class="oms_table" border="1" style="margin-left: auto;margin-right: auto; width:80%">
     <tbody>
 		<tr>
@@ -123,7 +124,7 @@
 		<tr>
 			<td>贴片BOM</td>
 			<td style="word-break:break-all;" colspan = "4">
-				<a href="#" id="bom" data-type="textarea" data-pk="bom" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入产品P/N">${(plan.planItems['bom'].itemValue)!}</a>
+				<a href="#" id="bom" data-type="textarea" data-pk="bom" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入贴片BOM">${(plan.planItems['bom'].itemValue)!}</a>
 				<#if canWrite??>
 				<script>
 					$(function(){
@@ -188,7 +189,7 @@
 		</tr>
 		<tr>
 			<td>SMT资料包</td>
-			<td colspan = "4"><a href="#" id="smtDocPackage" data-type="textarea" data-pk="smtDocPackage" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入产品P/N">${(plan.planItems['smtDocPackage'].itemValue)!}</a>
+			<td colspan = "4"><a href="#" id="smtDocPackage" data-type="textarea" data-pk="smtDocPackage" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入SMT资料包">${(plan.planItems['smtDocPackage'].itemValue)!}</a>
 				<#if canWrite??>
 				<script>
 					$(function(){
@@ -483,7 +484,7 @@
 			</td>
 			<td>质量部</td>
 			<td>
-				<a href="#" class="editable" id="quality_part" data-type="textarea" data-pk="quality_part" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入测试部信息">
+				<a href="#" class="editable" id="quality_part" data-type="textarea" data-pk="quality_part" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入质量部信息">
 					<#if plan.planItems["quality_part"]?has_content>${plan.planItems['quality_part'].itemValue}</#if></a>
 			</td>
 		</tr>

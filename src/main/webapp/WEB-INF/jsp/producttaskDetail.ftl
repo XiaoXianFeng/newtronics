@@ -17,7 +17,7 @@
 		</td>
 		<td>文件编号:</td>
 		<td colspan = "2">
-			<a href="#" class="editable" id="file_No" data-type="textarea" data-pk="file_No" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入文件编号">${(plan.planItems['file_No'].itemValue)!}</a>
+			<a href="#" class="editable" id="file_No" data-type="textarea" data-placement="bottom" data-pk="file_No" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入文件编号">${(plan.planItems['file_No'].itemValue)!}</a>
 		</td>
 	</tr>
 </table>
@@ -110,7 +110,7 @@
 		</tr>
 		<tr>
 			<td>SMT资料包</td>
-			<td colspan = "3"><a href="#" id="smtDocPackage" data-type="textarea" data-pk="smtDocPackage" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入产品P/N">${(plan.planItems['smtDocPackage'].itemValue)!}</a>
+			<td colspan = "3"><a href="#" id="smtDocPackage" data-type="textarea" data-pk="smtDocPackage" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入SMT资料包">${(plan.planItems['smtDocPackage'].itemValue)!}</a>
 				<#if canWrite??>
 				<script>
 					$(function(){
@@ -127,7 +127,7 @@
 		<tr>
 			<td>贴片BOM</td>
 			<td style="word-break:break-all;" colspan = "3">
-				<a href="#" id="bom" data-type="textarea" data-pk="bom" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入产品P/N">${(plan.planItems['bom'].itemValue)!}</a>
+				<a href="#" id="bom" data-type="textarea" data-pk="bom" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入贴片BOM">${(plan.planItems['bom'].itemValue)!}</a>
 				<#if canWrite??>
 				<script>
 					$(function(){

@@ -50,7 +50,7 @@
 			</td>
 		</tr>
 </table>
-
+<br>
 <table class="oms_table" border="1" style="margin-left: auto;margin-right: auto; width:80%">
     <tbody>
 		<tr>

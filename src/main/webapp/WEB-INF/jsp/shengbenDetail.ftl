@@ -4,31 +4,31 @@
     <tbody>
     	<tr>
 			<th colspan = "8" rowspan = "3">
-				<a href="#" class="editable" id="product_book" data-type="textarea" data-pk="product_book" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入生产通知书">${(plan.planItems['product_book'].itemValue)!}</a>
+				<a href="#" class="editable" id="product_book" data-type="textarea" data-placement="bottom" data-pk="product_book" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入生产通知书">${(plan.planItems['product_book'].itemValue)!}</a>
 			</th>
 			<td colspan = "2">表单编号:
-				<a href="#" class="editable" id="list_number" data-type="textarea" data-pk="list_number" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入表单编号">${(plan.planItems['list_number'].itemValue)!}</a>
+				<a href="#" class="editable" id="list_number" data-type="textarea" data-placement="bottom" data-pk="list_number" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入表单编号">${(plan.planItems['list_number'].itemValue)!}</a>
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "2">版本号:
-				<a href="#" class="editable" id="version_number" data-type="textarea" data-pk="version_number" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入版本号">${(plan.planItems['version_number'].itemValue)!}</a>
+				<a href="#" class="editable" id="version_number" data-type="textarea" data-placement="bottom" data-pk="version_number" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入版本号">${(plan.planItems['version_number'].itemValue)!}</a>
 			</td>
 		</tr>
 		<tr>
 			<td colspan = "2">编号:
-				<a href="#" class="editable" id="edit_number" data-type="textarea" data-pk="edit_number" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入编号">${(plan.planItems['edit_number'].itemValue)!}</a>
+				<a href="#" class="editable" id="edit_number" data-type="textarea" data-placement="bottom" data-pk="edit_number" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入编号">${(plan.planItems['edit_number'].itemValue)!}</a>
 			</td>
 		</tr>
 		<tr>
 			<th rowspan = "2" width=10%px>订单信息</th>
 			<th width=10%px>客户</th>
 			<td colspan = "4" width=40%px>
-				<a href="#" class="editable" id="cus_name" data-type="textarea" data-pk="cus_name" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入客户">${(plan.planItems['cus_name'].itemValue)!}</a>
+				<a href="#" class="editable" id="cus_name" data-type="textarea" data-placement="bottom" data-pk="cus_name" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入客户">${(plan.planItems['cus_name'].itemValue)!}</a>
 			</td>
 			<th width=10%px>产品型号</th>
 			<td colspan = "3" width=30%px>
-				<a href="#" class="editable" id="productModel" data-type="textarea" data-pk="productModel" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入产品型号">${(plan.planItems['productModel'].itemValue)!}</a>
+				<a href="#" class="editable" id="productModel" data-placement="bottom" data-type="textarea" data-pk="productModel" data-url="${(rc.getContextPath())!}/do/plan/save.html" data-title="输入产品型号">${(plan.planItems['productModel'].itemValue)!}</a>
 			</td>
 		</tr>
 		<tr>

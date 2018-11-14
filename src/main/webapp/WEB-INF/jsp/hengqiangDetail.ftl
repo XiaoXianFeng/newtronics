@@ -59,7 +59,7 @@
 		</tr>
 		<tr>
 			<td>贴片BOM</td>
-			<td colspan="2"><a href="#" id="bom" data-type="textarea" data-pk="bom" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入产品P/N">${(plan.planItems['bom'].itemValue)!""}</a>
+			<td colspan="2"><a href="#" id="bom" data-type="textarea" data-pk="bom" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入贴片BOM">${(plan.planItems['bom'].itemValue)!""}</a>
 				<script>
 					$(function(){
 				    	$('#bom').editable({
@@ -85,7 +85,7 @@
 		</tr>
 		<tr>
 			<td>SMT资料包</td>
-			<td colspan="2"><a href="#" id="smtDocPackage" data-type="textarea" data-pk="smtDocPackage" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入产品P/N">${(plan.planItems['smtDocPackage'].itemValue)!""}</a>
+			<td colspan="2"><a href="#" id="smtDocPackage" data-type="textarea" data-pk="smtDocPackage" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入SMT资料包">${(plan.planItems['smtDocPackage'].itemValue)!""}</a>
 			<script>
 				$(function(){
 				    $('#smtDocPackage').editable({
@@ -209,13 +209,13 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="#" class="editable" id="product" data-type="text" data-pk="productModel" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入产品型号">${(plan.planItems['productModel'].itemValue)!""}</a>
+				<a href="#" class="editable" id="product" data-type="text" data-pk="productModel" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入委托加工方">${(plan.planItems['productModel'].itemValue)!""}</a>
 			</td>
 			<td>
-				<a href="#" class="editable" id="pcbVer" data-type="text" data-pk="pcbVer" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入PCB版本号 ">${(plan.planItems['pcbVer'].itemValue)!""}</a>
+				<a href="#" class="editable" id="pcbVer" data-type="text" data-pk="pcbVer" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入订单批量 ">${(plan.planItems['pcbVer'].itemValue)!""}</a>
 			</td>
 			<td>
-				<a href="#" class="editable" id="productPN" data-type="text" data-pk="productPN" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入产品P/N">${(plan.planItems['productPN'].itemValue)!""}</a>
+				<a href="#" class="editable" id="productPN" data-type="text" data-pk="productPN" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入分批投产数量">${(plan.planItems['productPN'].itemValue)!""}</a>
 			</td>
 			<td>
 				<a href="#" class="editable" id="manufactureDate" data-type="date" data-pk="manufactureDate" data-url="${rc.getContextPath()}/do/plan/save.html" data-title="输入预计生产日期">${(plan.planItems['manufactureDate'].itemValue)!""}</a>
@@ -277,9 +277,9 @@
 		<tr>
 				<td>备注</td>
 				<td colspan = "4" >
-					<div id="comments" data-type="wysihtml5" data-pk="comments">${(plan.planItems['comments'].itemValue)!""}</div>
+					<div id="comments1" data-type="wysihtml5" data-pk="comments1">${(plan.planItems['comments1'].itemValue)!""}</div>
 					<script>
-					$('#comments').editable({
+					$('#comments1').editable({
 				        url: '${rc.getContextPath()}/do/plan/save.html',
 				        title: '备注',
 				        wysihtml5:{

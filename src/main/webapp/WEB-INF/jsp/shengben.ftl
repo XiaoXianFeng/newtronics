@@ -43,6 +43,7 @@
 				white-space: nowrap;
 				overflow: hidden;
 				text-overflow: ellipsis;
+				data-placement="bottom"
 			}			
 		</style>
 	</head>
